@@ -1,5 +1,4 @@
-{
-  /* <script>
+/* <script>
  // use a script tag or an external JS file
  document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(ScrollTrigger)
@@ -7,7 +6,6 @@
  });
 
 </script> */
-}
 
 const burgerIcon = document.querySelector(".burger_icon");
 const contentContainer = document.querySelector(".content--container");
@@ -81,7 +79,7 @@ function setAnimForMenu() {
         {
           duration: 0.3,
           ease: "expo.in",
-          height: "100vh",
+          height: "calc(100svh - 60px)",
         },
         "startLabel"
       )
@@ -100,3 +98,9 @@ function setAnimForMenu() {
       );
   }
 }
+
+window.addEventListener("resize", function (e) {
+  if (isMenuOpened && this.window.innerWidth >= 991) {
+    setAnimForMenu();
+  }
+});

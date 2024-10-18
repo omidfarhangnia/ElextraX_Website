@@ -130,6 +130,6 @@ table {
 
 /* global class names */
 
-.d-none {
+.displayNone {
   display: none;
 }

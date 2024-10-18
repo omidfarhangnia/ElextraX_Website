@@ -1,12 +1,21 @@
 :root {
   --brand-gray-num-1: #f1f1f1;
   --brand-gray-num-2: #d4d4d4;
+  --brand-gray-num-3: #e0e0e0;
   --text-black-num-1: #333333;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header {
-  padding-inline: 1.5rem;
-  padding-block: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 84rem;
 }
 .header--small_device {
   display: flex;
@@ -17,16 +26,68 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
+  width: 50px;
   aspect-ratio: 1/1;
   background-color: var(--brand-gray-num-1);
   border-radius: 50%;
   cursor: pointer;
 }
+.header--big_device {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+}
+.header--big_device .logo {
+  width: 130px;
+  transition: opacity 0.3s;
+}
+.header--big_device .logo:hover {
+  opacity: 0.7;
+}
+.header--big_device .logo a {
+  display: block;
+}
+.header--big_device .logo a img {
+  width: 100%;
+}
+.header--big_device .big_device--menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.header--big_device .big_device--menu a {
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-size: 0.9rem;
+  color: var(--text-black-num-1);
+  transition: color 0.3s, opacity 0.3s;
+}
+.header--big_device .big_device--menu a:hover {
+  color: #666666;
+  opacity: 0.7;
+}
+.header--big_device .big_device--menu .big__device--clone__btn {
+  background: transparent;
+  border: none;
+  border: 1.5px solid var(--brand-gray-num-2);
+  width: auto;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: var(--text-black-num-1);
+  padding: 0.75rem 0;
+  line-height: 1.5rem;
+  font-family: "Work Sans";
+  padding: 12px 24px;
+  transition: background 0.3s;
+}
+.header--big_device .big_device--menu .big__device--clone__btn:hover {
+  background: var(--brand-gray-num-3);
+}
 
 .menu {
+  height: 0;
   overflow-y: hidden;
-  transition: height 1s;
+  width: 100%;
 }
 .menu--links {
   color: var(--text-black-num-1);
@@ -54,4 +115,26 @@
   padding: 0.75rem 0;
   line-height: 1.5rem;
   font-family: "Work Sans";
+  padding: 12px 24px;
+  transition: background 0.3s;
+}
+.menu--clone__btn:hover {
+  background: var(--brand-gray-num-3);
+}
+
+@media (min-width: 650px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
+@media (min-width: 991px) {
+  .header--small_device {
+    display: none;
+  }
+  .header--big_device {
+    display: flex;
+  }
+  .menu {
+    height: 0 !important;
+  }
 }
