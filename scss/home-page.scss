@@ -3,6 +3,7 @@
   --brand-gray-num-2: #d4d4d4;
   --brand-gray-num-3: #e0e0e0;
   --text-black-num-1: #333333;
+  --text-black-num-2: #444444;
 }
 
 @mixin grayBtnStyle($width) {
@@ -17,9 +18,9 @@
   line-height: 1.5rem;
   font-family: "Work Sans";
   padding: 12px 24px;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
   &:hover {
-    background: var(--brand-gray-num-3);
+    background-color: var(--brand-gray-num-3);
   }
 }
 
@@ -33,7 +34,6 @@
   padding: 0.5rem 1.5rem;
   width: 100%;
   box-sizing: border-box;
-  max-width: 84rem;
   &--small_device {
     display: flex;
     justify-content: space-between;
@@ -52,6 +52,8 @@
 
   &--big_device {
     display: none;
+    width: 100%;
+    max-width: 84rem;
     align-items: center;
     justify-content: space-between;
     .logo {
@@ -131,5 +133,151 @@
   }
   .menu {
     height: 0 !important;
+  }
+  .header {
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.content--container {
+  width: 100%;
+}
+
+.section_1 {
+  width: 100%;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  & > div {
+    position: relative;
+    padding: 2rem 1.5rem;
+    width: 100%;
+    max-width: 84rem;
+    display: flex;
+    justify-items: center;
+    align-items: start;
+    flex-direction: column;
+  }
+  & > div > * {
+    z-index: 2;
+  }
+  &--header {
+    font-size: calc(0.75rem + 9vw);
+    font-family: "Work Sans", "sans-serif";
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1.15em;
+    color: var(--text-black-num-1);
+    margin-bottom: 1rem;
+  }
+  &--prag {
+    font-family: "Inter", "sans-serif";
+    line-height: 1.5rem;
+    color: var(--text-black-num-2);
+    margin-bottom: 3.5rem;
+  }
+  &--link {
+    color: var(--text-black-num-1);
+    background-color: #fff0;
+    text-decoration: underline 1px var(--text-black-num-1);
+    font-weight: 500;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter", "sans-serif";
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+    img {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  &--image {
+    width: 100%;
+    max-width: 750px;
+    img,
+    source {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      aspect-ratio: 8/5;
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (min-width: "480px") {
+  .section_1 > div {
+    padding: 3rem 1.5rem;
+  }
+
+  .section_1--header {
+    font-size: 3rem;
+  }
+  .section_1--image {
+    position: absolute;
+    width: 50%;
+    aspect-ratio: unset;
+    right: 0;
+    bottom: 0;
+    z-index: 1 !important;
+    img {
+      aspect-ratio: 1/1;
+    }
+  }
+}
+
+@media (min-width: "768px") {
+  .section_1 > div {
+    padding: 3rem 2rem;
+  }
+
+  .section_1--header {
+    font-size: 4rem;
+  }
+  .section_1--prag {
+    max-width: 36rem;
+    margin-bottom: 9.5rem;
+  }
+
+  .section_1--image {
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: "992px") {
+  .section_1 > div {
+    padding: 3rem 2rem;
+  }
+
+  .section_1--header {
+    font-size: calc(5rem + 3vh);
+    line-height: 1.05em;
+  }
+  .section_1--prag {
+    max-width: 34rem;
+    line-height: 1.5em;
+    font-size: 1.125rem;
+    margin-bottom: 13rem;
+  }
+
+  .section_1--link {
+    font-size: 2rem;
+    gap: 13px;
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .section_1--image {
+    width: 40%;
   }
 }
