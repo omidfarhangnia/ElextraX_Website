@@ -40,6 +40,7 @@ function setAnimForMenu() {
           duration: 0.3,
           ease: "expo.out",
           height: "0",
+          minHeight: "0",
         },
         "startLabel"
       )
@@ -80,6 +81,7 @@ function setAnimForMenu() {
           duration: 0.3,
           ease: "expo.in",
           height: "calc(100svh - 60px)",
+          minHeight: "450px",
         },
         "startLabel"
       )
