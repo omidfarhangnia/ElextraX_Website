@@ -76,7 +76,6 @@
 .header {
   padding: 0.5rem 1.5rem;
   width: 100%;
-  box-sizing: border-box;
   &--small_device {
     display: flex;
     justify-content: space-between;
@@ -194,7 +193,6 @@
   background-color: #f6f6f6;
   display: flex;
   justify-content: center;
-  box-sizing: border-box;
   align-items: center;
   & > div {
     position: relative;
@@ -487,7 +485,6 @@
   .section_2 {
     .card_lg {
       height: 100%;
-      box-sizing: border-box;
       & > div {
         height: 100%;
         justify-content: space-between;
@@ -524,5 +521,63 @@
   }
   .section_2--link {
     @include grayLinkStyle992px();
+  }
+}
+
+.section_3 {
+  position: relative;
+  font-family: Inter, sans-serif;
+  padding: 4rem 1.5rem;
+  display: flex;
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+  & > div {
+    max-width: 68rem;
+  }
+  &--image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    filter: brightness(30%);
+  }
+  &--prag {
+    font-size: calc(2.5vw + 1rem);
+    color: #ffffff;
+    letter-spacing: 0.005em;
+    font-weight: 300;
+    line-height: 1.25em;
+  }
+  &--prag::selection {
+    background: black;
+    color: rgb(209, 209, 209);
+  }
+  &--prag::first-letter {
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: "479px") {
+  .section_3 {
+    padding: 6rem 3rem;
+  }
+  .section_3--prag {
+    font-size: calc(2vw + 1.5rem);
+  }
+}
+
+@media (min-width: "992px") {
+  .section_3 {
+    min-height: 100vh;
+    padding: 8rem 5rem;
+  }
+
+  .section_3--prag {
+    font-size: 3.5rem;
   }
 }
