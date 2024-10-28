@@ -40,16 +40,55 @@
     width: 12px;
     height: 12px;
   }
+  @media (min-width: "992px") {
+    font-size: 1.3rem;
+    gap: 5px;
+    text-underline-offset: 5px;
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
 }
 
-@mixin grayLinkStyle992px() {
-  font-size: 1.3rem;
-  gap: 5px;
-  text-underline-offset: 5px;
-  img {
-    width: 15px;
-    height: 15px;
+@mixin sectionHeader() {
+  font-size: 1.75rem;
+  color: var(--text-black-num-1);
+  line-height: 1.3em;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  @media (min-width: "768px") {
+    font-size: 2rem;
   }
+  @media (min-width: "992px") {
+    font-size: 2.5rem;
+  }
+}
+
+@mixin sectionPrag() {
+  line-height: 1.5rem;
+  color: var(--text-black-num-2);
+  margin-bottom: 2.3rem;
+  @media (min-width: "992px") {
+    font-size: 1.125rem;
+    line-height: 1.5em;
+  }
+}
+
+@mixin sectionBaseStyle($padding_inline, $padding_block) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $padding_block $padding_inline;
+  font-family: Inter, sans-serif;
+}
+
+@mixin sectionTitle() {
+  color: var(--text-black-num-3);
+  line-height: 1.4em;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 @mixin cardHeader() {
@@ -295,10 +334,6 @@
     margin-bottom: 13rem;
   }
 
-  .section_1--link {
-    @include grayLinkStyle992px();
-  }
-
   .section_1--image {
     width: 40%;
   }
@@ -318,22 +353,13 @@
     max-width: 84rem;
   }
   &--title {
-    color: var(--text-black-num-3);
-    line-height: 1.4em;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
+    @include sectionTitle;
   }
   &--header {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-    line-height: 1.3em;
-    color: var(--text-black-num-1);
+    @include sectionHeader();
   }
   &--prag {
-    line-height: 1.5rem;
-    color: var(--text-black-num-2);
-    margin-bottom: 2.3rem;
+    @include sectionPrag();
   }
   &--link {
     @include grayLinkStyle();
@@ -472,9 +498,6 @@
       font-size: 1rem;
     }
   }
-  .section_2--header {
-    font-size: 2rem;
-  }
 }
 
 @media (min-width: "992px") {
@@ -511,16 +534,6 @@
   }
   .section_2 > div {
     padding: 3rem 2rem;
-  }
-  .section_2--header {
-    font-size: 2.5rem;
-  }
-  .section_2--prag {
-    font-size: 1.125rem;
-    line-height: 1.5em;
-  }
-  .section_2--link {
-    @include grayLinkStyle992px();
   }
 }
 
@@ -602,14 +615,10 @@
     gap: 1.5rem;
   }
   &--header {
-    font-size: 1.75rem;
-    color: var(--text-black-num-1);
-    line-height: 1.3em;
+    @include sectionHeader();
   }
   &--prag {
-    line-height: 1.5rem;
-    color: var(--text-black-num-2);
-    font-weight: 400;
+    @include sectionPrag();
   }
   &--link {
     @include grayLinkStyle();
@@ -654,13 +663,6 @@
     &--textContainer {
       padding: 0 2rem;
     }
-    &--header {
-      font-size: 2rem;
-    }
-    &--prag {
-      font-size: 1.125rem;
-      line-height: 1.5em;
-    }
   }
 }
 
@@ -690,10 +692,7 @@
     }
   }
   &--header {
-    font-size: 1.75rem;
-    color: var(--text-black-num-1);
-    line-height: 1.3em;
-    margin-bottom: 1.5rem;
+    @include sectionHeader();
   }
   &--link {
     @include grayLinkStyle();
@@ -778,8 +777,70 @@
         width: calc(50% - 2rem);
       }
     }
-    &--header {
-      font-size: 2.5rem;
+  }
+}
+
+.sectin_6 {
+  @include sectionBaseStyle(1.5rem, 6rem);
+  & > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 84rem;
+  }
+  &--image {
+    width: 100%;
+    aspect-ratio: 3 /2;
+    img {
+      border-radius: 0.75rem;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &--title {
+    @include sectionTitle;
+  }
+  &--header {
+    @include sectionHeader();
+    max-width: 300px;
+  }
+  &--prag {
+    @include sectionPrag();
+  }
+  &--link {
+    @include grayLinkStyle();
+  }
+}
+
+@media (min-width: "768px") {
+  .sectin_6 {
+    & > div {
+      align-items: center;
+      gap: 2rem;
+    }
+    &--image,
+    &--textContainer {
+      width: calc(50% - 1rem);
+    }
+    &--image {
+      aspect-ratio: 6 /7;
+      img {
+        border-radius: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: "992px") {
+  .sectin_6 {
+    padding: 8rem 2rem;
+    & > div {
+      gap: 4rem;
+    }
+    &--image,
+    &--textContainer {
+      width: calc(50% - 2rem);
     }
   }
 }
