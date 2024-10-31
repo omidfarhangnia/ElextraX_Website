@@ -7,7 +7,7 @@
   --text-black-num-3: #666666;
 }
 
-@mixin grayBtnStyle($width) {
+@mixin grayBtnStyle($width, $paddingBlock: 12px) {
   background: transparent;
   border: none;
   border: 1.5px solid var(--brand-gray-num-2);
@@ -15,10 +15,9 @@
   border-radius: 5px;
   font-size: 0.9rem;
   color: var(--text-black-num-1);
-  padding: 0.75rem 0;
   line-height: 1.5rem;
   font-family: "Work Sans";
-  padding: 12px 24px;
+  padding: $paddingBlock 24px;
   transition: background-color 0.3s;
   &:hover {
     background-color: var(--brand-gray-num-3);
@@ -180,7 +179,7 @@
   &--links {
     color: var(--text-black-num-1);
     text-decoration: none;
-    font-family: "Work Sans";
+    font-family: " Sans";
     font-size: 1.125rem;
     font-weight: 400;
     display: block;
@@ -977,5 +976,99 @@
   }
   .news--textContainer {
     height: 500px;
+  }
+}
+
+.section_8 {
+  position: relative;
+  min-height: 40vh;
+  max-height: 100vh;
+  @include sectionBaseStyle(2rem, 2rem);
+  color: #ffffff;
+  &--image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: #000000;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.5;
+    }
+  }
+  &--textContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 84rem;
+    justify-content: space-between;
+    div:nth-child(1) {
+      width: 100%;
+      max-width: 700px;
+    }
+  }
+  &--title {
+    @include sectionTitle();
+    color: #ffffff;
+  }
+  &--header {
+    @include sectionHeader();
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-family: "Work Sans", "sans-serif";
+    font-weight: 300;
+    line-height: 1.2em;
+    text-transform: uppercase;
+  }
+  &--btn {
+    @include grayBtnStyle(auto, 1rem);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    margin-bottom: 5rem;
+    path {
+      fill: #ffffff !important;
+    }
+  }
+}
+
+@media (min-width: "768px") {
+  .section_8 {
+    height: auto;
+    aspect-ratio: 2/1;
+    &--header {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media (min-width: "992px") {
+  .section_8 {
+    align-items: end;
+    &--textContainer {
+      padding: 3rem;
+    }
+    &--header {
+      font-size: 4rem;
+      margin-bottom: 0;
+    }
+    &--title {
+      font-size: 1.2rem;
+    }
+    &--btn {
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 }
