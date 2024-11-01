@@ -11,6 +11,11 @@
     />
     <title>ElextraX</title>
     <!-- styles -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./public/fav-icon/fav-icon.png"
+    />
     <link rel="stylesheet" href="./css/home-page.css" />
     <link rel="stylesheet" href="./css/css-reset.css" />
     <!-- fonts -->
@@ -22,181 +27,340 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <div class="header--small_device">
-          <div class="logo">
-            <!-- this link need change -->
-            <a href=".">
-              <svg
-                width="110"
-                height="16"
-                viewBox="0 0 110 16"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M109.488 15H106.716L103.13 9.41198L99.5664 15H96.8604L101.898 7.62998L97.2564 0.47998H100.028L103.35 5.75998L106.716 0.47998H109.29L104.582 7.54198L109.488 15Z"
-                  fill="#222222"
-                />
-                <path
-                  d="M95.8233 15H93.9533L92.4133 10.974H85.8353L84.2953 15H82.4473L88.1013 0.47998H90.1913L95.8233 15ZM86.4733 9.32398H91.7753L89.1133 2.17398L86.4733 9.32398Z"
-                  fill="#222222"
-                />
-                <path
-                  d="M75.1201 0.47998C76.6015 0.47998 77.7895 0.861314 78.6841 1.62398C79.5788 2.38665 80.0261 3.42065 80.0261 4.72598C80.0261 6.03131 79.5714 7.05065 78.6621 7.78398C77.7675 8.50265 76.5795 8.86198 75.0981 8.86198L74.9441 8.97198H71.3801V15H69.6201V0.47998H75.1201ZM75.0981 7.32198C76.1395 7.32198 76.9095 7.10931 77.4081 6.68398C77.9215 6.24398 78.1781 5.59131 78.1781 4.72598C78.1781 3.86065 77.9215 3.21531 77.4081 2.78998C76.9095 2.34998 76.1395 2.12998 75.0981 2.12998H71.3801V7.32198H75.0981ZM76.1101 7.67398L80.9061 15H78.8161L74.6361 8.64198L76.1101 7.67398Z"
-                  fill="#222222"
-                />
-                <path
-                  d="M66.5509 0.47998V2.12998H61.4909V15H59.7309V2.12998H54.6709V0.47998H66.5509Z"
-                  fill="#222222"
-                />
-                <path
-                  d="M52.9649 11.2818C52.6569 12.1031 52.2169 12.8144 51.6449 13.4158C51.0729 14.0024 50.3982 14.4498 49.6209 14.7578C48.8582 15.0658 48.0222 15.2198 47.1129 15.2198C45.7342 15.2198 44.5389 14.9191 43.5269 14.3178C42.5295 13.7018 41.7522 12.8364 41.1949 11.7218C40.6522 10.6071 40.3809 9.27977 40.3809 7.73977C40.3809 6.19977 40.6522 4.87243 41.1949 3.75777C41.7522 2.6431 42.5295 1.7851 43.5269 1.18377C44.5389 0.567765 45.7195 0.259766 47.0689 0.259766C48.0075 0.259766 48.8435 0.391765 49.5769 0.655766C50.3102 0.905098 50.9335 1.28643 51.4469 1.79977C51.9749 2.29843 52.3929 2.91443 52.7009 3.64776L50.9629 4.46176C50.6402 3.62577 50.1709 2.9951 49.5549 2.56977C48.9535 2.12977 48.1689 1.90977 47.2009 1.90977C46.2182 1.90977 45.3529 2.14443 44.6049 2.61377C43.8569 3.06843 43.2702 3.72843 42.8449 4.59377C42.4342 5.4591 42.2289 6.50777 42.2289 7.73977C42.2289 8.9571 42.4269 10.0058 42.8229 10.8858C43.2189 11.7511 43.7835 12.4184 44.5169 12.8878C45.2502 13.3424 46.1155 13.5698 47.1129 13.5698C48.0809 13.5698 48.9242 13.3278 49.6429 12.8438C50.3615 12.3451 50.8822 11.6044 51.2049 10.6218L52.9649 11.2818Z"
-                  fill="#222222"
-                />
-                <path
-                  d="M27.5537 15V0.47998H37.7397V2.12998H29.3137V6.81598H35.8697V8.46598H29.3137V13.35H38.0697V15H27.5537Z"
-                  fill="#222222"
-                />
-                <path
-                  d="M16.1653 13.35H24.4813V15H14.4053V0.47998H16.1653V13.35Z"
-                  fill="#222222"
-                />
-                <path
-                  d="M0.375977 15V0.47998H10.562V2.12998H2.13598V6.81598H8.69198V8.46598H2.13598V13.35H10.892V15H0.375977Z"
-                  fill="#222222"
-                />
-              </svg>
-            </a>
-          </div>
-          <div class="burger_icon">
+    <header class="header">
+      <div class="header--small_device">
+        <div class="logo">
+          <!-- this link need change -->
+          <a href=".">
             <svg
-              class="burger--svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
+              width="110"
+              height="16"
+              viewBox="0 0 110 16"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M2 5H22V6.66667H2V5ZM2 10.8333H22V12.4999H2V10.8333ZM21.9998 16.6667H11.1665V18.3334H21.9998V16.6667Z"
-                fill="black"
+                d="M109.488 15H106.716L103.13 9.41198L99.5664 15H96.8604L101.898 7.62998L97.2564 0.47998H100.028L103.35 5.75998L106.716 0.47998H109.29L104.582 7.54198L109.488 15Z"
+                fill="#222222"
+              />
+              <path
+                d="M95.8233 15H93.9533L92.4133 10.974H85.8353L84.2953 15H82.4473L88.1013 0.47998H90.1913L95.8233 15ZM86.4733 9.32398H91.7753L89.1133 2.17398L86.4733 9.32398Z"
+                fill="#222222"
+              />
+              <path
+                d="M75.1201 0.47998C76.6015 0.47998 77.7895 0.861314 78.6841 1.62398C79.5788 2.38665 80.0261 3.42065 80.0261 4.72598C80.0261 6.03131 79.5714 7.05065 78.6621 7.78398C77.7675 8.50265 76.5795 8.86198 75.0981 8.86198L74.9441 8.97198H71.3801V15H69.6201V0.47998H75.1201ZM75.0981 7.32198C76.1395 7.32198 76.9095 7.10931 77.4081 6.68398C77.9215 6.24398 78.1781 5.59131 78.1781 4.72598C78.1781 3.86065 77.9215 3.21531 77.4081 2.78998C76.9095 2.34998 76.1395 2.12998 75.0981 2.12998H71.3801V7.32198H75.0981ZM76.1101 7.67398L80.9061 15H78.8161L74.6361 8.64198L76.1101 7.67398Z"
+                fill="#222222"
+              />
+              <path
+                d="M66.5509 0.47998V2.12998H61.4909V15H59.7309V2.12998H54.6709V0.47998H66.5509Z"
+                fill="#222222"
+              />
+              <path
+                d="M52.9649 11.2818C52.6569 12.1031 52.2169 12.8144 51.6449 13.4158C51.0729 14.0024 50.3982 14.4498 49.6209 14.7578C48.8582 15.0658 48.0222 15.2198 47.1129 15.2198C45.7342 15.2198 44.5389 14.9191 43.5269 14.3178C42.5295 13.7018 41.7522 12.8364 41.1949 11.7218C40.6522 10.6071 40.3809 9.27977 40.3809 7.73977C40.3809 6.19977 40.6522 4.87243 41.1949 3.75777C41.7522 2.6431 42.5295 1.7851 43.5269 1.18377C44.5389 0.567765 45.7195 0.259766 47.0689 0.259766C48.0075 0.259766 48.8435 0.391765 49.5769 0.655766C50.3102 0.905098 50.9335 1.28643 51.4469 1.79977C51.9749 2.29843 52.3929 2.91443 52.7009 3.64776L50.9629 4.46176C50.6402 3.62577 50.1709 2.9951 49.5549 2.56977C48.9535 2.12977 48.1689 1.90977 47.2009 1.90977C46.2182 1.90977 45.3529 2.14443 44.6049 2.61377C43.8569 3.06843 43.2702 3.72843 42.8449 4.59377C42.4342 5.4591 42.2289 6.50777 42.2289 7.73977C42.2289 8.9571 42.4269 10.0058 42.8229 10.8858C43.2189 11.7511 43.7835 12.4184 44.5169 12.8878C45.2502 13.3424 46.1155 13.5698 47.1129 13.5698C48.0809 13.5698 48.9242 13.3278 49.6429 12.8438C50.3615 12.3451 50.8822 11.6044 51.2049 10.6218L52.9649 11.2818Z"
+                fill="#222222"
+              />
+              <path
+                d="M27.5537 15V0.47998H37.7397V2.12998H29.3137V6.81598H35.8697V8.46598H29.3137V13.35H38.0697V15H27.5537Z"
+                fill="#222222"
+              />
+              <path
+                d="M16.1653 13.35H24.4813V15H14.4053V0.47998H16.1653V13.35Z"
+                fill="#222222"
+              />
+              <path
+                d="M0.375977 15V0.47998H10.562V2.12998H2.13598V6.81598H8.69198V8.46598H2.13598V13.35H10.892V15H0.375977Z"
+                fill="#222222"
               />
             </svg>
-            <svg
-              class="close--svg"
-              style="display: none"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20.411"
-              height="20.411"
-              viewBox="0 0 20.411 20.411"
-            >
-              <g id="close" transform="translate(-3075 3517)">
-                <rect
-                  id="Rectangle_7406"
-                  data-name="Rectangle 7406"
-                  width="2"
-                  height="26.865"
-                  transform="translate(3075 -3515.586) rotate(-45)"
-                />
-                <rect
-                  id="Rectangle_7407"
-                  data-name="Rectangle 7407"
-                  width="2"
-                  height="26.865"
-                  transform="translate(3093.996 -3517) rotate(45)"
-                />
-              </g>
-            </svg>
-          </div>
+          </a>
         </div>
-        <div class="header--big_device">
-          <div class="logo">
-            <!-- this link need change -->
-            <a href=".">
-              <img src="./public/home-page/ElectraX_Logo.svg" />
-            </a>
-          </div>
-          <ul class="big_device--menu">
-            <!-- these link need change -->
-            <li><a href="./" class="big__device--links">ElectraX</a></li>
-            <li><a href="./" class="big__device--links">About</a></li>
-            <li><a href="./" class="big__device--links">Careers</a></li>
-            <li><a href="./" class="big__device--links">News</a></li>
-            <li><a href="./" class="big__device--links">Contact</a></li>
-            <li class="big__device--cloneBtn__container">
-              <a
-                href="https://webflow.com/templates/html/electrax-startup-website-template?utm_medium=affiliate&utm_source=876207&pscd=try.webflow.com&ps_partner_key=ODc2MjA3&ps_xid=MGK3B0FYMOablp&gsxid=MGK3B0FYMOablp&gspk=ODc2MjA3"
-              >
-                <button class="big__device--clone__btn">Clone Template</button>
-              </a>
-            </li>
-          </ul>
+        <div class="burger_icon">
+          <svg
+            class="burger--svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M2 5H22V6.66667H2V5ZM2 10.8333H22V12.4999H2V10.8333ZM21.9998 16.6667H11.1665V18.3334H21.9998V16.6667Z"
+              fill="black"
+            />
+          </svg>
+          <svg
+            class="close--svg"
+            style="display: none"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20.411"
+            height="20.411"
+            viewBox="0 0 20.411 20.411"
+          >
+            <g id="close" transform="translate(-3075 3517)">
+              <rect
+                id="Rectangle_7406"
+                data-name="Rectangle 7406"
+                width="2"
+                height="26.865"
+                transform="translate(3075 -3515.586) rotate(-45)"
+              />
+              <rect
+                id="Rectangle_7407"
+                data-name="Rectangle 7407"
+                width="2"
+                height="26.865"
+                transform="translate(3093.996 -3517) rotate(45)"
+              />
+            </g>
+          </svg>
         </div>
-      </header>
-      <div class="menu">
-        <ul>
+      </div>
+      <div class="header--big_device">
+        <div class="logo">
+          <!-- this link need change -->
+          <a href=".">
+            <img src="./public/home-page/ElectraX_Logo.svg" />
+          </a>
+        </div>
+        <ul class="big_device--menu">
           <!-- these link need change -->
-          <li><a href="./" class="menu--links">ElectraX</a></li>
-          <li><a href="./" class="menu--links">About</a></li>
-          <li><a href="./" class="menu--links">Careers</a></li>
-          <li><a href="./" class="menu--links">News</a></li>
-          <li><a href="./" class="menu--links">Contact</a></li>
-          <li class="cloneBtn__container">
+          <li><a href="./" class="big__device--links">ElectraX</a></li>
+          <li><a href="./" class="big__device--links">About</a></li>
+          <li><a href="./" class="big__device--links">Careers</a></li>
+          <li><a href="./" class="big__device--links">News</a></li>
+          <li><a href="./" class="big__device--links">Contact</a></li>
+          <li class="big__device--cloneBtn__container">
             <a
               href="https://webflow.com/templates/html/electrax-startup-website-template?utm_medium=affiliate&utm_source=876207&pscd=try.webflow.com&ps_partner_key=ODc2MjA3&ps_xid=MGK3B0FYMOablp&gsxid=MGK3B0FYMOablp&gspk=ODc2MjA3"
             >
-              <button class="menu--clone__btn">Clone Template</button>
+              <button class="big__device--clone__btn">Clone Template</button>
             </a>
           </li>
         </ul>
       </div>
-      <div class="content--container">
-        <section class="section_1 displayNone">
-          <div>
-            <h1 class="section_1--header">Redefining Personal Aviation</h1>
-            <p class="section_1--prag">
-              Elevate your travel experience with ElectraX, where innovation
-              meets legacy in our flagship aircraft. Designed for pioneers who
-              dare to dream, we’re soaring into the future of flight.
+    </header>
+    <div class="menu">
+      <ul>
+        <!-- these link need change -->
+        <li><a href="./" class="menu--links">ElectraX</a></li>
+        <li><a href="./" class="menu--links">About</a></li>
+        <li><a href="./" class="menu--links">Careers</a></li>
+        <li><a href="./" class="menu--links">News</a></li>
+        <li><a href="./" class="menu--links">Contact</a></li>
+        <li class="cloneBtn__container">
+          <a
+            href="https://webflow.com/templates/html/electrax-startup-website-template?utm_medium=affiliate&utm_source=876207&pscd=try.webflow.com&ps_partner_key=ODc2MjA3&ps_xid=MGK3B0FYMOablp&gsxid=MGK3B0FYMOablp&gspk=ODc2MjA3"
+          >
+            <button class="menu--clone__btn">Clone Template</button>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="content--container">
+      <section class="section_1">
+        <div>
+          <h1 class="section_1--header">Redefining Personal Aviation</h1>
+          <p class="section_1--prag">
+            Elevate your travel experience with ElectraX, where innovation meets
+            legacy in our flagship aircraft. Designed for pioneers who dare to
+            dream, we’re soaring into the future of flight.
+          </p>
+          <!-- this link need change -->
+          <a href="." class="section_1--link">
+            <span>Discover the ElectraX</span>
+            <img
+              alt="arrow right top"
+              src="./public/home-page/arrow_right_top.svg"
+            />
+          </a>
+          <div class="section_1--image">
+            <img
+              src="./public/home-page/white_background_plane_1530w.avif"
+              srcset="
+                ./public/home-page/white_background_plane_500w.avif   500w,
+                ./public/home-page/white_background_plane_800w.avif   800w,
+                ./public/home-page/white_background_plane_1530w.avif 1530w
+              "
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section_2">
+        <div>
+          <div class="section_2--textContainer">
+            <p class="section_2--title">Precision Engineering at Its Finest</p>
+            <h2 class="section_2--header">Aerodynamics Redefined</h2>
+            <p class="section_2--prag">
+              Our aircraft’s streamlined design is a product of relentless
+              innovation, reducing drag and enhancing speed and efficiency.
+              Every curve, every detail is crafted to ensure optimal performance
+              in all flight conditions.
             </p>
-            <!-- this link need change -->
-            <a href="." class="section_1--link">
+            <a href="." class="section_2--link">
               <span>Discover the ElectraX</span>
               <img
                 alt="arrow right top"
                 src="./public/home-page/arrow_right_top.svg"
               />
             </a>
-            <div class="section_1--image">
+          </div>
+          <div class="section_2--cardContainer">
+            <div class="card_lg card">
               <img
-                src="./public/home-page/white_background_plane_1530w.avif"
+                class="card--image"
+                src="./public/home-page/back_of_plane_1024w.avif"
+                loading="lazy"
                 srcset="
-                  ./public/home-page/white_background_plane_500w.avif   500w,
-                  ./public/home-page/white_background_plane_800w.avif   800w,
-                  ./public/home-page/white_background_plane_1530w.avif 1530w
+                  ./public/home-page/back_of_plane_500w.avif   500w,
+                  ./public/home-page/back_of_plane_1024w.avif 1024w
                 "
               />
+              <div>
+                <h2 class="card--header">Cutting-Edge Materials</h2>
+                <div>
+                  <h3 class="card--title">Advanced Propulsion Technology</h3>
+                  <p class="card--prag">
+                    Powered by next-generation engines, our aircraft offer
+                    unrivaled efficiency and power. Whether you choose electric
+                    or hybrid propulsion, you’ll experience seamless
+                    acceleration and impressive range.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card_sm card_sm_1 card">
+              <img
+                class="card--image"
+                src="./public/home-page/plane_engine_1456w.avif"
+                loading="lazy"
+                srcset="
+                  ./public/home-page/plane_engine_500w.avif   500w,
+                  ./public/home-page/plane_engine_800w.avif   800w,
+                  ./public/home-page/plane_engine_1456w.avif 1456w
+                "
+              />
+              <div>
+                <h3 class="card--title">Cutting-Edge Materials</h3>
+                <p class="card--prag">
+                  Constructed from advanced lightweight materials, ElectraX
+                  aircraft maximize durability while minimizing weight,
+                  improving both fuel efficiency and overall performance.
+                </p>
+              </div>
+            </div>
+            <div class="card_sm card_sm_2 card">
+              <img
+                class="card--image"
+                src="./public/home-page/black_plane_2912w.avif"
+                loading="lazy"
+                srcset="
+                  ./public/home-page/black_plane_500w.avif   500w,
+                  ./public/home-page/black_plane_800w.avif   800w,
+                  ./public/home-page/black_plane_1080w.avif 1080w,
+                  ./public/home-page/black_plane_1600w.avif 1600w,
+                  ./public/home-page/black_plane_2000w.avif 2000w,
+                  ./public/home-page/black_plane_2912w.avif 2912w
+                "
+              />
+              <div>
+                <h3 class="card--title">Engineered for the Future</h3>
+                <p class="card--prag">
+                  From the propulsion system to the aerodynamic body, each
+                  element is designed to push the boundaries of what’s possible
+                  in personal aviation. It’s not just a plane—it’s a masterpiece
+                  of engineering.
+                </p>
+              </div>
             </div>
           </div>
-        </section>
-        <section class="section_2 displayNone">
+        </div>
+      </section>
+      <section class="section_3">
+        <div>
+          <img
+            class="section_3--image"
+            loading="lazy"
+            src="./public/home-page/flying_black_plane_2912w.avif"
+            srcset="
+              ./public/home-page/flying_black_plane_500w.avif   500w,
+              ./public/home-page/flying_black_plane_800w.avif   800w,
+              ./public/home-page/flying_black_plane_1080w.avif 1080w,
+              ./public/home-page/flying_black_plane_1600w.avif 1600w,
+              ./public/home-page/flying_black_plane_2912w.avif 2912w
+            "
+          />
+          <p class="section_3--prag">
+            At ElectraX, we blend the timeless elegance of the iconic Electra
+            with cutting-edge technology to create personal aircraft that
+            redefine the skies. Our mission is to honor aviation history while
+            pioneering the future of personal flight.
+          </p>
+        </div>
+      </section>
+      <section class="section_4">
+        <div class="section_4--textContainer">
+          <h2 class="section_4--header">A New Heights of Precision</h2>
+          <p class="section_4--prag">
+            Our aircraft’s streamlined design is a product of relentless
+            innovation, reducing drag and enhancing speed and efficiency. Every
+            curve, every detail is crafted to ensure optimal performance in all
+            flight conditions.
+          </p>
+          <a href="." class="section_4--link">
+            <span>Discover the ElectraX</span>
+            <img
+              alt="arrow right top"
+              src="./public/home-page/arrow_right_top.svg"
+            />
+          </a>
+        </div>
+        <div class="section_4--imageContainer">
+          <div class="images">
+            <img
+              src="./public/home-page/engine_wide_1920w.avif"
+              loading="lazy"
+              srcset="
+                ./public/home-page/engine_wide_500w.avif   500w,
+                ./public/home-page/engine_wide_800w.avif   800w,
+                ./public/home-page/engine_wide_1080w.avif 1080w,
+                ./public/home-page/engine_wide_1920w.avif 1920w
+              "
+            />
+          </div>
+          <div class="images">
+            <img
+              src="./public/home-page/dark_plane_2048w.avif"
+              loading="lazy"
+              srcset="
+                ./public/home-page/dark_plane_500w.avif   500w,
+                ./public/home-page/dark_plane_800w.avif   800w,
+                ./public/home-page/dark_plane_1080w.avif 1080w,
+                ./public/home-page/dark_plane_2048w.avif 2048w
+              "
+            />
+          </div>
+          <div class="images">
+            <img
+              src="./public/home-page/engine_black_1920w.avif"
+              loading="lazy"
+              srcset="
+                ./public/home-page/engine_black_500w.avif   500w,
+                ./public/home-page/engine_black_800w.avif   800w,
+                ./public/home-page/engine_black_1080w.avif 1080w,
+                ./public/home-page/engine_black_1920w.avif 1920w
+              "
+            />
+          </div>
+        </div>
+      </section>
+      <section class="section_5">
+        <div>
           <div>
-            <div class="section_2--textContainer">
-              <p class="section_2--title">
-                Precision Engineering at Its Finest
-              </p>
-              <h2 class="section_2--header">Aerodynamics Redefined</h2>
-              <p class="section_2--prag">
-                Our aircraft’s streamlined design is a product of relentless
-                innovation, reducing drag and enhancing speed and efficiency.
-                Every curve, every detail is crafted to ensure optimal
-                performance in all flight conditions.
-              </p>
-              <a href="." class="section_2--link">
+            <div>
+              <h2 class="section_5--header">Heritage Meets Innovation</h2>
+              <a href="." class="section_5--link">
                 <span>Discover the ElectraX</span>
                 <img
                   alt="arrow right top"
@@ -204,357 +368,297 @@
                 />
               </a>
             </div>
-            <div class="section_2--cardContainer">
-              <div class="card_lg card">
-                <img
-                  class="card--image"
-                  src="./public/home-page/back_of_plane_1024w.avif"
-                  loading="lazy"
-                  srcset="
-                    ./public/home-page/back_of_plane_500w.avif   500w,
-                    ./public/home-page/back_of_plane_1024w.avif 1024w
-                  "
-                />
-                <div>
-                  <h2 class="card--header">Cutting-Edge Materials</h2>
-                  <div>
-                    <h3 class="card--title">Advanced Propulsion Technology</h3>
-                    <p class="card--prag">
-                      Powered by next-generation engines, our aircraft offer
-                      unrivaled efficiency and power. Whether you choose
-                      electric or hybrid propulsion, you’ll experience seamless
-                      acceleration and impressive range.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card_sm card_sm_1 card">
-                <img
-                  class="card--image"
-                  src="./public/home-page/plane_engine_1456w.avif"
-                  loading="lazy"
-                  srcset="
-                    ./public/home-page/plane_engine_500w.avif   500w,
-                    ./public/home-page/plane_engine_800w.avif   800w,
-                    ./public/home-page/plane_engine_1456w.avif 1456w
-                  "
-                />
-                <div>
-                  <h3 class="card--title">Cutting-Edge Materials</h3>
-                  <p class="card--prag">
-                    Constructed from advanced lightweight materials, ElectraX
-                    aircraft maximize durability while minimizing weight,
-                    improving both fuel efficiency and overall performance.
-                  </p>
-                </div>
-              </div>
-              <div class="card_sm card_sm_2 card">
-                <img
-                  class="card--image"
-                  src="./public/home-page/black_plane_2912w.avif"
-                  loading="lazy"
-                  srcset="
-                    ./public/home-page/black_plane_500w.avif   500w,
-                    ./public/home-page/black_plane_800w.avif   800w,
-                    ./public/home-page/black_plane_1080w.avif 1080w,
-                    ./public/home-page/black_plane_1600w.avif 1600w,
-                    ./public/home-page/black_plane_2000w.avif 2000w,
-                    ./public/home-page/black_plane_2912w.avif 2912w
-                  "
-                />
-                <div>
-                  <h3 class="card--title">Engineered for the Future</h3>
-                  <p class="card--prag">
-                    From the propulsion system to the aerodynamic body, each
-                    element is designed to push the boundaries of what’s
-                    possible in personal aviation. It’s not just a plane—it’s a
-                    masterpiece of engineering.
-                  </p>
-                </div>
-              </div>
+            <ul class="section_5--listContainer">
+              <li class="list">
+                <h3 class="list--header">Aerodynamic Perfection</h3>
+                <p class="list--prag">
+                  The sleek, streamlined shape of our aircraft is engineered for
+                  superior aerodynamics, reducing drag and improving fuel
+                  efficiency. This careful balance of form and function allows
+                  for smoother, further, faster flying that ever before.
+                </p>
+              </li>
+              <li class="list">
+                <h3 class="list--header">
+                  Iconic Design Meets Modern Technology
+                </h3>
+                <p class="list--prag">
+                  Inspired by aviation's golden era, the ElectraX model
+                  showcases iconic design elements paired with cutting-edge
+                  technology. From the gleaming exterior our aircrafts are a
+                  testament to excellence.
+                </p>
+              </li>
+            </ul>
+            <p class="section_5--textBox">
+              Every ElectraX aircraft is built with future-forward engineering
+              in mind. Our planes are not only high-performing but also
+              environmentally responsible.
+            </p>
+          </div>
+          <div>
+            <div class="section_5--image">
+              <img
+                src="./public/home-page/plane_on_beach_1024w.avif"
+                loading="lazy"
+                srcset="
+                  ./public/home-page/plane_on_beach_500w.avif   500w,
+                  ./public/home-page/plane_on_beach_1024w.avif 1024w
+                "
+              />
             </div>
           </div>
-        </section>
-        <section class="section_3 displayNone">
-          <div>
-            <img
-              class="section_3--image"
-              loading="lazy"
-              src="./public/home-page/flying_black_plane_2912w.avif"
-              srcset="
-                ./public/home-page/flying_black_plane_500w.avif   500w,
-                ./public/home-page/flying_black_plane_800w.avif   800w,
-                ./public/home-page/flying_black_plane_1080w.avif 1080w,
-                ./public/home-page/flying_black_plane_1600w.avif 1600w,
-                ./public/home-page/flying_black_plane_2912w.avif 2912w
-              "
-            />
-            <p class="section_3--prag">
-              At ElectraX, we blend the timeless elegance of the iconic Electra
-              with cutting-edge technology to create personal aircraft that
-              redefine the skies. Our mission is to honor aviation history while
-              pioneering the future of personal flight.
-            </p>
+        </div>
+      </section>
+      <section class="section_6">
+        <div>
+          <div class="section_6--image">
+            <img src="./public/home-page/man_portrait_1856w.avif" />
           </div>
-        </section>
-        <section class="section_4 displayNone">
-          <div class="section_4--textContainer">
-            <h2 class="section_4--header">A New Heights of Precision</h2>
-            <p class="section_4--prag">
-              Our aircraft’s streamlined design is a product of relentless
-              innovation, reducing drag and enhancing speed and efficiency.
-              Every curve, every detail is crafted to ensure optimal performance
-              in all flight conditions.
+          <div class="section_6--textContainer">
+            <h3 class="section_6--title">Our Story</h3>
+            <h2 class="section_6--header">Learn About Our Mission</h2>
+            <p class="section_6--prag">
+              From weather updates to navigational data, ElectraX ensures
+              seamless transmission of critical information. With real-time
+              flight tracking you’ll receive vital data instantly.
             </p>
-            <a href="." class="section_4--link">
-              <span>Discover the ElectraX</span>
+            <a href="." class="section_6--link">
+              <span>Read About Us</span>
               <img
                 alt="arrow right top"
                 src="./public/home-page/arrow_right_top.svg"
               />
             </a>
           </div>
-          <div class="section_4--imageContainer">
-            <div class="images">
+        </div>
+      </section>
+      <section class="section_7">
+        <div>
+          <div class="section_7--textContainer">
+            <h3 class="section_7--title">Heritage Meets Innovation</h3>
+            <h2 class="section_7--header">News & Resources</h2>
+            <a href="." class="section_7--link">
+              <span>News & Resources</span>
               <img
-                src="./public/home-page/engine_wide_1920w.avif"
-                loading="lazy"
-                srcset="
-                  ./public/home-page/engine_wide_500w.avif   500w,
-                  ./public/home-page/engine_wide_800w.avif   800w,
-                  ./public/home-page/engine_wide_1080w.avif 1080w,
-                  ./public/home-page/engine_wide_1920w.avif 1920w
-                "
+                alt="arrow right top"
+                src="./public/home-page/arrow_right_top.svg"
               />
-            </div>
-            <div class="images">
-              <img
-                src="./public/home-page/dark_plane_2048w.avif"
-                loading="lazy"
-                srcset="
-                  ./public/home-page/dark_plane_500w.avif   500w,
-                  ./public/home-page/dark_plane_800w.avif   800w,
-                  ./public/home-page/dark_plane_1080w.avif 1080w,
-                  ./public/home-page/dark_plane_2048w.avif 2048w
-                "
-              />
-            </div>
-            <div class="images">
-              <img
-                src="./public/home-page/engine_black_1920w.avif"
-                loading="lazy"
-                srcset="
-                  ./public/home-page/engine_black_500w.avif   500w,
-                  ./public/home-page/engine_black_800w.avif   800w,
-                  ./public/home-page/engine_black_1080w.avif 1080w,
-                  ./public/home-page/engine_black_1920w.avif 1920w
-                "
-              />
-            </div>
+            </a>
           </div>
-        </section>
-        <section class="section_5 displayNone">
-          <div>
-            <div>
-              <div>
-                <h2 class="section_5--header">Heritage Meets Innovation</h2>
-                <a href="." class="section_5--link">
-                  <span>Discover the ElectraX</span>
+          <div class="section_7--newsContainer">
+            <a href=".">
+              <div class="news">
+                <div class="news--textContainer">
+                  <div class="news--date">
+                    <span>Press Release</span>
+                    <span class="news--dot"></span>
+                    <span>10/14/23</span>
+                  </div>
+                  <h4 class="news--header">Aviation and Globalization</h4>
+                </div>
+                <div class="news--image">
                   <img
-                    alt="arrow right top"
-                    src="./public/home-page/arrow_right_top.svg"
+                    src="./public/home-page/airplane_in_sunset_1456w.avif"
+                    loading="lazy"
+                    srcset="
+                      ./public/home-page/airplane_in_sunset_1456w.avif 1456w,
+                      ./public/home-page/airplane_in_sunset_500w.avif   500w
+                    "
                   />
-                </a>
+                </div>
               </div>
-              <ul class="section_5--listContainer">
-                <li class="list">
-                  <h3 class="list--header">Aerodynamic Perfection</h3>
-                  <p class="list--prag">
-                    The sleek, streamlined shape of our aircraft is engineered
-                    for superior aerodynamics, reducing drag and improving fuel
-                    efficiency. This careful balance of form and function allows
-                    for smoother, further, faster flying that ever before.
-                  </p>
-                </li>
-                <li class="list">
-                  <h3 class="list--header">
-                    Iconic Design Meets Modern Technology
-                  </h3>
-                  <p class="list--prag">
-                    Inspired by aviation's golden era, the ElectraX model
-                    showcases iconic design elements paired with cutting-edge
-                    technology. From the gleaming exterior our aircrafts are a
-                    testament to excellence.
-                  </p>
-                </li>
-              </ul>
-              <p class="section_5--textBox">
-                Every ElectraX aircraft is built with future-forward engineering
-                in mind. Our planes are not only high-performing but also
-                environmentally responsible.
-              </p>
-            </div>
-            <div>
-              <div class="section_5--image">
-                <img
-                  src="./public/home-page/plane_on_beach_1024w.avif"
-                  loading="lazy"
-                  srcset="
-                    ./public/home-page/plane_on_beach_500w.avif   500w,
-                    ./public/home-page/plane_on_beach_1024w.avif 1024w
-                  "
-                />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="section_6 displayNone">
-          <div>
-            <div class="section_6--image">
-              <img src="./public/home-page/man_portrait_1856w.avif" />
-            </div>
-            <div class="section_6--textContainer">
-              <h3 class="section_6--title">Our Story</h3>
-              <h2 class="section_6--header">Learn About Our Mission</h2>
-              <p class="section_6--prag">
-                From weather updates to navigational data, ElectraX ensures
-                seamless transmission of critical information. With real-time
-                flight tracking you’ll receive vital data instantly.
-              </p>
-              <a href="." class="section_6--link">
-                <span>Read About Us</span>
-                <img
-                  alt="arrow right top"
-                  src="./public/home-page/arrow_right_top.svg"
-                />
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="section_7 displayNone">
-          <div>
-            <div class="section_7--textContainer">
-              <h3 class="section_7--title">Heritage Meets Innovation</h3>
-              <h2 class="section_7--header">News & Resources</h2>
-              <a href="." class="section_7--link">
-                <span>News & Resources</span>
-                <img
-                  alt="arrow right top"
-                  src="./public/home-page/arrow_right_top.svg"
-                />
-              </a>
-            </div>
-            <div class="section_7--newsContainer">
-              <a href=".">
-                <div class="news">
-                  <div class="news--textContainer">
-                    <div class="news--date">
-                      <span>Press Release</span>
-                      <span class="news--dot"></span>
-                      <span>10/14/23</span>
-                    </div>
-                    <h4 class="news--header">Aviation and Globalization</h4>
+            </a>
+            <a href=".">
+              <div class="news">
+                <div class="news--textContainer">
+                  <div class="news--date">
+                    <span>Article</span>
+                    <span class="news--dot"></span>
+                    <span>10/2/23</span>
                   </div>
-                  <div class="news--image">
-                    <img
-                      src="./public/home-page/airplane_in_sunset_1456w.avif"
-                      loading="lazy"
-                      srcset="
-                        ./public/home-page/airplane_in_sunset_1456w.avif 1456w,
-                        ./public/home-page/airplane_in_sunset_500w.avif   500w
-                      "
-                    />
-                  </div>
+                  <h4 class="news--header">Safety Standards in Aviation</h4>
                 </div>
-              </a>
-              <a href=".">
-                <div class="news">
-                  <div class="news--textContainer">
-                    <div class="news--date">
-                      <span>Article</span>
-                      <span class="news--dot"></span>
-                      <span>10/2/23</span>
-                    </div>
-                    <h4 class="news--header">Safety Standards in Aviation</h4>
-                  </div>
-                  <div class="news--image">
-                    <img
-                      src="./public/home-page/airplane_hangar_928w.avif"
-                      loading="lazy"
-                      srcset="
-                        ./public/home-page/airplane_hangar_928w.avif 928w,
-                        ./public/home-page/airplane_hangar_500w.avif 500w
-                      "
-                    />
-                  </div>
-                </div>
-              </a>
-              <a href=".">
-                <div class="news">
-                  <div class="news--textContainer">
-                    <div class="news--date">
-                      <span>News</span>
-                      <span class="news--dot"></span>
-                      <span>10/1/23</span>
-                    </div>
-                    <h4 class="news--header">
-                      Breakthrough in Material Science
-                    </h4>
-                  </div>
-                  <div class="news--image">
-                    <img
-                      src="./public/home-page/metal_928w.avif"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="section_8">
-          <div class="section_8--image">
-            <img
-              src="./public/home-page/black_plane_2912w.avif"
-              loading="lazy"
-              srcset="
-                ./public/home-page/black_plane_500w.avif   500w,
-                ./public/home-page/black_plane_800w.avif   800w,
-                ./public/home-page/black_plane_1080w.avif 1080w,
-                ./public/home-page/black_plane_1600w.avif 1600w,
-                ./public/home-page/black_plane_2000w.avif 2000w,
-                ./public/home-page/black_plane_2912w.avif 2912w
-              "
-            />
-          </div>
-          <div class="section_8--textContainer">
-            <div>
-              <h4 class="section_8--title">The Future of Personal Aviation</h4>
-              <h2 class="section_8--header">
-                Experience the Next Era of Flight
-              </h2>
-            </div>
-            <div>
-              <button class="section_8--btn">
-                <div>Discover the ElectraX</div>
-                <svg
-                  width="10"
-                  height="10"
-                  viewBox="0 0 10 10"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.625 1C9.625 0.654822 9.34518 0.375 9 0.375L3.375 0.375C3.02982 0.375 2.75 0.654822 2.75 1C2.75 1.34518 3.02982 1.625 3.375 1.625H8.375V6.625C8.375 6.97018 8.65482 7.25 9 7.25C9.34518 7.25 9.625 6.97018 9.625 6.625L9.625 1ZM1.44194 9.44194L9.44194 1.44194L8.55806 0.558059L0.558058 8.55806L1.44194 9.44194Z"
-                    fill="#ffffff"
+                <div class="news--image">
+                  <img
+                    src="./public/home-page/airplane_hangar_928w.avif"
+                    loading="lazy"
+                    srcset="
+                      ./public/home-page/airplane_hangar_928w.avif 928w,
+                      ./public/home-page/airplane_hangar_500w.avif 500w
+                    "
                   />
-                </svg>
-              </button>
-            </div>
+                </div>
+              </div>
+            </a>
+            <a href=".">
+              <div class="news">
+                <div class="news--textContainer">
+                  <div class="news--date">
+                    <span>News</span>
+                    <span class="news--dot"></span>
+                    <span>10/1/23</span>
+                  </div>
+                  <h4 class="news--header">Breakthrough in Material Science</h4>
+                </div>
+                <div class="news--image">
+                  <img
+                    src="./public/home-page/metal_928w.avif"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </a>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+      <section class="section_8">
+        <div class="section_8--image">
+          <img
+            src="./public/home-page/black_plane_2912w.avif"
+            loading="lazy"
+            srcset="
+              ./public/home-page/black_plane_500w.avif   500w,
+              ./public/home-page/black_plane_800w.avif   800w,
+              ./public/home-page/black_plane_1080w.avif 1080w,
+              ./public/home-page/black_plane_1600w.avif 1600w,
+              ./public/home-page/black_plane_2000w.avif 2000w,
+              ./public/home-page/black_plane_2912w.avif 2912w
+            "
+          />
+        </div>
+        <div class="section_8--textContainer">
+          <div>
+            <h4 class="section_8--title">The Future of Personal Aviation</h4>
+            <h2 class="section_8--header">Experience the Next Era of Flight</h2>
+          </div>
+          <div>
+            <button class="section_8--btn">
+              <div>Discover the ElectraX</div>
+              <svg
+                width="10"
+                height="10"
+                viewBox="0 0 10 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.625 1C9.625 0.654822 9.34518 0.375 9 0.375L3.375 0.375C3.02982 0.375 2.75 0.654822 2.75 1C2.75 1.34518 3.02982 1.625 3.375 1.625H8.375V6.625C8.375 6.97018 8.65482 7.25 9 7.25C9.34518 7.25 9.625 6.97018 9.625 6.625L9.625 1ZM1.44194 9.44194L9.44194 1.44194L8.55806 0.558059L0.558058 8.55806L1.44194 9.44194Z"
+                  fill="#ffffff"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
     </div>
+    <footer class="footer">
+      <div>
+        <div class="footer--formContainer">
+          <div>
+            <h2 class="footer--formContainer--header">Join our newsletter</h2>
+            <p class="footer--formContainer--prag">
+              We’ll send you a nice letter once per week. No spam.
+            </p>
+          </div>
+          <div>
+            <form class="footer--formContainer--form">
+              <input type="email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer--linksContainer">
+          <div class="footer--linksContainer--aboutUs">
+            <div>
+              <img
+                class="image"
+                src="./public/home-page/footer_ElextraX_logo.svg"
+              />
+            </div>
+            <div>
+              <h4 class="title">About us</h4>
+              <p class="prag">
+                We blend the timeless elegance of the iconic Electra with
+                cutting-edge technology to create personal aircraft that
+                redefine the skies. Our mission is to honor aviation history
+                while pioneering the future of personal flight.
+              </p>
+            </div>
+            <div>
+              <h4 class="title">Follow us</h4>
+              <ul class="contactUs--links">
+                <a
+                  href="https://www.linkedin.com/company/linkd-pro"
+                  target="_blank"
+                >
+                  <li>
+                    <img src="./public/home-page/footer_linkedin_icon.svg" />
+                  </li>
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                  <li>
+                    <img src="./public/home-page/footer_twitter_icon.svg" />
+                  </li>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <li>
+                    <img src="./public/home-page/footer_instagram_icon.svg" />
+                  </li>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <li>
+                    <img src="./public/home-page/footer_youtube_icon.svg" />
+                  </li>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <li>
+                    <img src="./public/home-page/footer_facebook_icon.svg" />
+                  </li>
+                </a>
+              </ul>
+            </div>
+          </div>
+          <div class="linksContainer--lists">
+            <ul>
+              <li class="lists--header">Product</li>
+              <li class="lists--member"><a href=".">Home</a></li>
+              <li class="lists--member"><a href=".">ElectraX Airplane</a></li>
+            </ul>
+          </div>
+          <div class="linksContainer--lists">
+            <ul>
+              <li class="lists--header">Company</li>
+              <li class="lists--member"><a href=".">About us</a></li>
+              <li class="lists--member"><a href=".">Careers</a></li>
+              <li class="lists--member"><a href=".">News</a></li>
+              <li class="lists--member"><a href=".">Contact</a></li>
+            </ul>
+          </div>
+          <div class="linksContainer--lists">
+            <ul>
+              <li class="lists--header">Other Pages</li>
+              <li class="lists--member"><a href=".">Licenses</a></li>
+              <li class="lists--member"><a href=".">Style Guide</a></li>
+              <li class="lists--member"><a href=".">Change Log</a></li>
+              <li class="lists--member"><a href=".">404 page</a></li>
+              <li class="lists--member"><a href=".">Protected page</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer--copyRight">
+          <div>
+            <a href=".">Licenses</a>
+            <a href=".">Style Guide</a>
+            <a href=".">Change Log</a>
+          </div>
+          <div>
+            <a href="http://www.aaronrudyk.com/">Made by Aaron Rudyk</a>
+            <a href="https://webflow.com/">Powered by Webflow</a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- GSAP -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
