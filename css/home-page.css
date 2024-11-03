@@ -56,7 +56,6 @@
   font-family: "Work Sans";
   font-size: 0.9rem;
   color: var(--text-black-num-1);
-  transition: color 0.3s, opacity 0.3s;
 }
 .header--big_device .big_device--menu a:hover {
   color: var(--text-black-num-3);
@@ -539,16 +538,17 @@
   font-weight: 300;
   line-height: 1.25em;
 }
+.section_3--prag span {
+  display: inline-block;
+  margin-left: 3rem;
+}
 .section_3--prag::-moz-selection {
-  background: black;
+  background: black !important;
   color: rgb(209, 209, 209);
 }
 .section_3--prag::selection {
-  background: black;
+  background: black !important;
   color: rgb(209, 209, 209);
-}
-.section_3--prag::first-letter {
-  margin-left: 3rem;
 }
 
 @media (min-width: 479px) {
@@ -644,10 +644,11 @@
     height: 15px;
   }
 }
-.section_4--imageContainer {
+.section_4--imageContainer > div {
   display: flex;
   width: 150%;
   gap: 15px;
+  padding: 10px;
 }
 .section_4--imageContainer .images {
   width: 40%;
@@ -820,7 +821,7 @@
 }
 @media (min-width: 992px) {
   .section_5 {
-    padding: 0 8rem;
+    padding: 6rem 8rem 0 8rem;
   }
   .section_5 > div {
     max-width: 84rem;
@@ -951,7 +952,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 6rem 1.5rem;
+  padding: 0rem 1.5rem;
   font-family: Inter, sans-serif;
 }
 .section_7 > div {
@@ -1118,11 +1119,12 @@
   position: relative;
   min-height: 40vh;
   max-height: 100vh;
+  margin-top: 4rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 2rem;
+  padding: 6rem 2rem;
   font-family: Inter, sans-serif;
   color: #ffffff;
 }

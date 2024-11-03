@@ -152,7 +152,7 @@
         font-family: "Work Sans";
         font-size: 0.9rem;
         color: var(--text-black-num-1);
-        transition: color 0.3s, opacity 0.3s;
+        // transition: color 0.3s, opacity 0.3s;
         &:hover {
           color: var(--text-black-num-3);
           opacity: 0.7;
@@ -555,12 +555,15 @@
     font-weight: 300;
     line-height: 1.25em;
   }
-  &--prag::selection {
-    background: black;
-    color: rgb(209, 209, 209);
+  &--prag {
+    span {
+      display: inline-block;
+      margin-left: 3rem;
+    }
   }
-  &--prag::first-letter {
-    margin-left: 3rem;
+  &--prag::selection {
+    background: black !important;
+    color: rgb(209, 209, 209);
   }
 }
 
@@ -613,9 +616,12 @@
     @include grayLinkStyle();
   }
   &--imageContainer {
-    display: flex;
-    width: 150%;
-    gap: 15px;
+    & > div {
+      display: flex;
+      width: 150%;
+      gap: 15px;
+      padding: 10px;
+    }
     .images {
       width: 40%;
       height: 100%;
@@ -757,7 +763,7 @@
 
 @media (min-width: "992px") {
   .section_5 {
-    padding: 0 8rem;
+    padding: 6rem 8rem 0 8rem;
     & > div {
       max-width: 84rem;
       gap: 4rem;
@@ -835,7 +841,7 @@
 }
 
 .section_7 {
-  @include sectionBaseStyle(1.5rem, 6rem);
+  @include sectionBaseStyle(1.5rem, 0rem);
   & > div {
     width: 100%;
     max-width: 84rem;
@@ -970,7 +976,8 @@
   position: relative;
   min-height: 40vh;
   max-height: 100vh;
-  @include sectionBaseStyle(2rem, 2rem);
+  margin-top: 4rem;
+  @include sectionBaseStyle(2rem, 6rem);
   color: #ffffff;
   &--image {
     position: absolute;
