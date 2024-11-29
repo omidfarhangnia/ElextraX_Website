@@ -90,28 +90,31 @@ document.addEventListener("DOMContentLoaded", (event) => {
         },
         "-=.4"
       );
-
-    // section five animation
-    gsap.to(".section_5", {
-      scrollTrigger: {
-        trigger: ".section_5",
-        pin: true,
-        end: "100% 40%",
-      },
-    });
-    // section six animation
-    gsap.to(".section_6", {
-      scrollTrigger: {
-        trigger: ".section_6",
-        pin: true,
-        end: "100% 40%",
-      },
-    });
     // section eight animation
     gsap.to(".section_8", {
       scrollTrigger: {
         trigger: ".section_8",
         pin: true,
+        end: "100% 40%",
+      },
+    });
+  });
+  mm.add("(min-width: 1250px)", () => {
+    // section five animation
+    gsap.to(".section_5", {
+      scrollTrigger: {
+        trigger: ".section_5",
+        pin: true,
+        start: "50% 50%",
+        end: "100% 40%",
+      },
+    });
+    // section six animation F
+    gsap.to(".section_6", {
+      scrollTrigger: {
+        trigger: ".section_6",
+        pin: true,
+        start: "50% 50%",
         end: "100% 40%",
       },
     });
